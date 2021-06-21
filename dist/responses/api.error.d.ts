@@ -1,0 +1,29 @@
+export declare enum ERROR {
+    USERS_NOT_FOUND = 0,
+    PAGINATION_WAS_NOT_PROVIDED = 1,
+    USER_NOT_FOUND = 2,
+    USER_EXIST = 3,
+    EMAIL_EXIST = 4,
+    ROLE_NOT_FOUND = 5,
+    ACCESSORY_NOT_FOUND = 6,
+    ACCESSORY_EXIST = 7,
+    ACCESSORIES_NOT_FOUND = 8,
+    CATEGORY_NOT_FOUND = 9,
+    STATE_ACCESSORY = 10,
+    CATEGORY_EXIST = 11,
+    IDENTIFICATION_LENGTH = 12,
+    QR_EXIST = 13,
+    USER_UNAUTHORIZED = 14,
+    REPORT_NO_FOUND = 15,
+    SEARCH_EMPTY = 16,
+    PHOTO_NOT_FOUND = 17,
+    COMMENT_NOT_FOUND = 18,
+    NOTIFICATION_NOT_FOUND = 19,
+    FILE_WAS_NOT_UPLOADED = 20,
+    FILE_WAS_NOT_REMOVED = 21
+}
+export interface Error {
+    code: number;
+    error: string;
+}
+export declare function GET_ERROR(error: any): Error;
